@@ -1,4 +1,4 @@
-/*
+
 //CONDICIONALES
 
 let nombre = prompt("Ingrese su nombre");
@@ -35,7 +35,6 @@ for (let index = 0; index < 3 ; index++) {
 
 }
 
-
 //WHILE
 
 let acierto = false;
@@ -57,27 +56,7 @@ while (contador < 2 && acierto === false) {
     contador ++;
 }
 
-//DO WHILE
 
-let usuarioGuardado = "Mariano"; 
-
-
-do {
-    let usuario = prompt("Ingresa tu usuario");
-    if (usuario === usuarioGuardado) {
-
-        alert("Bienvenido");
-    
-        
-    }
-} while (!usuarioGuardado){
-
-    let usuario = prompt("Ingresa tu usuario correctamente");
-    alert("Hola " + usuario);
-
-}
-
-*/
 
 
 
