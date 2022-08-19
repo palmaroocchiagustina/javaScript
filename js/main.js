@@ -1,6 +1,6 @@
 
 //CONDICIONALES
-/*
+
 let nombre = prompt("Ingrese su nombre");
 let usuario = nombre == "Agustina";
 
@@ -12,12 +12,12 @@ if (usuario || nombre == "Agustina") {
 
 console.log("Hola " + nombre );
 
-}*/
+}
 
 
 //FOR
 
-/*
+
 let palabraSecreta= "palta";
 
 
@@ -34,10 +34,10 @@ for (let index = 0; index < 3 ; index++) {
     }
 
 }
-*/
+
 
 //WHILE
-/*
+
 let acierto = false;
 let respuestaCorrecta = "banana";
 let contador = 0;
@@ -56,7 +56,7 @@ while (contador < 2 && acierto === false) {
     }
     contador ++;
 }
-*/
+
 //DO WHILE
 
 let continuar = false;
