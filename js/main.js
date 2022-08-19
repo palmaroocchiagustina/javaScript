@@ -1,4 +1,4 @@
-
+/*
 //CONDICIONALES
 
 let nombre = prompt("Ingrese su nombre");
@@ -59,7 +59,6 @@ while (contador < 2 && acierto === false) {
 
 //DO WHILE
 
-let continuar = false;
 let usuarioGuardado = "Mariano"; 
 
 
@@ -68,7 +67,7 @@ do {
     if (usuario === usuarioGuardado) {
 
         alert("Bienvenido");
-        continuar = false;
+    
         
     }
 } while (!usuarioGuardado){
@@ -78,7 +77,7 @@ do {
 
 }
 
-
+*/
 
 
 
