@@ -1,79 +1,55 @@
-// DESAFIO-2
+// DESAFIO ARRAYS
 
-//FUNCIONES
 
-//bienvenida funcion nombre de usuario
-//menu
-//eleccion
-//suma
-//respuesta con el total
 
-//bienvenida
-function nombreUsuario() {
-    alert("Bienvenidos a CHILL OUT");
-    let nombreIngresado = prompt("Ingresa tu nombre");
-  
-      alert("Hola " + nombreIngresado + " estos son nuestros pruductos");
+const  prenda = {tipo: "remera",color: "fucsia", precio: 2000 };
+productos = []; //array vacio donde con push voy a meter los objetos
+
+//clase constructora
+class Producto {
+    constructor(tipo,color, precio) {
     
-}
+        this.tipo = tipo;
+        this.color = color;
+        this.precio = parseFloat(precio);
 
+       this.sumarRecargo = ()=>{
 
-function seleccionProducto() {
+       return this.precio = this.precio * 1.20 ;
 
-    let suma=0;
-//menú
-    let opcion =  prompt("Ingresa el número de la opción que quieras: \n 1-Jeans  \n 2-Remera \n 3-Campera  \n 4-Zapatillas \n 5-Salir");
-    
-//eleccion
-//suma
-   do {
-
-    switch (opcion) {
-        case "1":
-             alert("Elegiste Jeans");
-             suma= suma + 500;
-             break;
-        case "2":
-            alert( "Elegiste Remera");
-            suma= suma +200;
-            break;
-        case "3":
-            alert("Elegiste Campera");
-            suma= suma +1000;
-            break;
-        case "4":
-            alert("Elegiste Zapatillas");
-            suma= suma +2000;
-            break;
-
-        case "5":
-            alert("Salir")
-            break;
-    default: 
-            alert("Ingresa una opción válida");
-            break;
        }
 
-    opcion = prompt("Elije el producto que quieres: \n 1-Jeans  \n 2-Remera \n 3-Campera  \n 4-Zapatillas \n 5-Salir");
-       
-
-   } while (opcion != "5" & opcion != 5);
-//respuesta con el total
-   alert("El total de tu compra es de " + suma);
-  
-   
+    }
 }
 
-nombreUsuario();
-seleccionProducto();
 
+// CREO PRODUCTO NUEVO 
 
+const productoNuevo1 = new Producto ("jeans","azul", 4000);
+const productoNuevo2 = new Producto ("top","verde", 2500);
 
+productoNuevo1.sumarRecargo();
 
+productoNuevo2.sumarRecargo();
 
+//FC PARA PUSH DE PRODUCTOS
 
-
+function cargarProductos(producto) {
     
+    productos.push(producto);
+
+}
+
+
+cargarProductos(prenda);
+cargarProductos(productoNuevo1);
+cargarProductos(productoNuevo2);
+console.log(productos);
+console.log(productoNuevo1.precio);
+console.log(productoNuevo2.precio);
+
+
+
 
 
 
