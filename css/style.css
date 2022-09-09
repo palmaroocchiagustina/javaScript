@@ -1,0 +1,16 @@
+* {
+  
+    list-style: none;
+}
+.card {
+    
+    margin: 20px;
+    padding: 10px;
+    max-width: 300px;
+    border: .0625rem solid #ccc;
+    background-color: rgb(130, 161, 223);
+    border-radius: .5rem;
+    -webkit-box-shadow: 21px 18px 8px -23px rgba(114, 114, 115, 1);
+    -moz-box-shadow: 21px 18px 8px -23px rgba(114, 114, 115, 1);
+    box-shadow: 21px 18px 8px -23px rgba(114, 114, 115, 1);
+}

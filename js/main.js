@@ -47,7 +47,7 @@ for (const prenda of prendas) {
 
     const li = document.createElement('li')
   
-    li.innerHTML=`<div>
+    li.innerHTML=`<div class= "card">
     <h3>${prenda.nombre}</h3>
     <p>${prenda.precio}</p>
     </div>
