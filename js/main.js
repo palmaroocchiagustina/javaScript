@@ -9,7 +9,7 @@ const prendas = [
     {nombre : "zapatillas",precio: 20000},
   
   ]
-const h2 = document.getElementById("h2", "h3");
+const h2 = document.getElementById("h2","h3");
 
 const parrafo = document.getElementsByTagName("p");
 const parrafoClases = document.getElementsByClassName("parrafo");
