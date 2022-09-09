@@ -1,65 +1,66 @@
-// DESAFIO ARRAYS
+// DOM
 
+const prendas = [
 
+    {nombre : "remera",precio: 2000},
+    {nombre : "buzo",precio: 6000},
+    {nombre : "jeans",precio: 10000},
+    {nombre : "cami saco",precio: 12000},
+    {nombre : "zapatillas",precio: 20000},
+  
+  ]
+const h2 = document.getElementById("h2", "h3");
 
-const  prenda = {tipo: "remera",color: "fucsia", precio: 2000 };
-productos = []; //array vacio donde con push voy a meter los objetos
+const parrafo = document.getElementsByTagName("p");
+const parrafoClases = document.getElementsByClassName("parrafo");
+const contenedor = document.getElementById("contenedor");
+const ul = document.getElementById("lista");
 
-//clase constructora
-class Producto {
-    constructor(tipo,color, precio) {
+//ITERAR CADA ELEMENTO DE LA LISTA
+
+for (const parrafo of parrafoClases) {
+
+    console.log(parrafo.innerHTML);
     
-        this.tipo = tipo;
-        this.color = color;
-        this.precio = parseFloat(precio);
+}
 
-       this.sumarRecargo = ()=>{
+console.log(parrafo[0].innerText = "ROPA DE DISEÑO");
 
-       return this.precio = this.precio * 1.20 ;
+// Bienvenida
 
-       }
+h2.innerHTML="<em>Bienevenidos</em>";
 
-    }
+
+// crear desde js
+
+const ingreso = document.createElement("p");
+
+ingreso.innerText= "Aceptamos todos los medios de pago";
+
+contenedor.append(ingreso);
+
+// mostrar prendas 
+
+h3.innerHTML = "<em>Nuestros productos</em>";
+
+for (const prenda of prendas) {
+
+    const li = document.createElement('li')
+  
+    li.innerHTML=`<div>
+    <h3>${prenda.nombre}</h3>
+    <p>${prenda.precio}</p>
+    </div>
+   `
+   ul.append(li)
+  
 }
 
 
-// CREO PRODUCTO NUEVO 
-
-const productoNuevo1 = new Producto ("jeans","azul", 4000);
-const productoNuevo2 = new Producto ("top","verde", 2500);
-
-productoNuevo1.sumarRecargo();
-
-productoNuevo2.sumarRecargo();
-
-//FC PARA PUSH DE PRODUCTOS
-
-function cargarProductos(producto) {
-    
-    productos.push(producto);
-
-}
-
-
-cargarProductos(prenda);
-cargarProductos(productoNuevo1);
-cargarProductos(productoNuevo2);
-console.log(productos);
-console.log(productoNuevo1.precio);
-console.log(productoNuevo2.precio);
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+ 
 
